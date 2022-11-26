@@ -32,7 +32,7 @@ interface ForageableDao {
     fun getForageables() : Flow<List<Forageable>>
 
     // TODO: implement a method to retrieve a Forageable from the database by id
-    @Query("SELECT * from forageable_database WHERE id = :id")
+    @Query("SELECT * FROM forageable_database WHERE id = :id")
     fun getForageable(id: Long) : Flow<Forageable>
 
     // TODO: implement a method to insert a Forageable into the database
